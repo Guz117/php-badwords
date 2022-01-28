@@ -1,7 +1,6 @@
 <?
-
-$nome ='Michele'
-
+$lorem ='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis sint, asperiores tempora sapiente consequuntur inventore dolorem eligendi voluptate fugit iure harum temporibus rem tenetur impedit explicabo. Ut commodi excepturi incidunt?';
+$lenString = strlen($lorem);
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +12,7 @@ $nome ='Michele'
     <title>Document</title>
 </head>
 <body>
-    <h1>Ciao come ti chiami <?php echo $name ?> </h1>
+    <h1><?php echo $lorem ?> </h1>
+    <p><?php echo $lenString; ?></p>
 </body>
 </html>
