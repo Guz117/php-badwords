@@ -1,6 +1,7 @@
 <?
 $lorem ='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis sint, asperiores tempora sapiente consequuntur inventore dolorem eligendi voluptate fugit iure harum temporibus rem tenetur impedit explicabo. Ut commodi excepturi incidunt?';
 $lenString = strlen($lorem);
+$modifier = str_replace("Lorem", "***", $lorem);
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +13,7 @@ $lenString = strlen($lorem);
     <title>Document</title>
 </head>
 <body>
-    <h1><?php echo $lorem ?> </h1>
+    <h1><?php echo $modifier ?> </h1>
     <p><?php echo $lenString; ?></p>
 </body>
 </html>
