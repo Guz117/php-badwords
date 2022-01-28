@@ -1,7 +1,8 @@
-<?
+<?php 
 $lorem ='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis sint, asperiores tempora sapiente consequuntur inventore dolorem eligendi voluptate fugit iure harum temporibus rem tenetur impedit explicabo. Ut commodi excepturi incidunt?';
 $lenString = strlen($lorem);
-$modifier = str_replace("Lorem", "***", $lorem);
+$strUser = $_GET['str'];
+$modifier = str_replace("$strUser", "***", $lorem);
 ?>
 
 <!DOCTYPE html>
