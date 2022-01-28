@@ -3,6 +3,7 @@ $lorem ='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis sin
 $lenString = strlen($lorem);
 $strUser = $_GET['str'];
 $modifier = str_replace("$strUser", "***", $lorem);
+$lenModifier = strlen($modifier);
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +16,6 @@ $modifier = str_replace("$strUser", "***", $lorem);
 </head>
 <body>
     <h1><?php echo $modifier ?> </h1>
-    <p><?php echo $lenString; ?></p>
+    <p><?php echo $lenModifier; ?></p>
 </body>
 </html>
